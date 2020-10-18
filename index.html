@@ -46,7 +46,12 @@
           <tr><td>&#9251;***&#9251;목록</td><td><ul><ul><ul><li>목록</li></ul></ul></td></tr>
           <tr><td>{-<br />&#9251;-&#9251;a<br />&#9251;-&#9251;b<br />&#9251;-&#9251;c<br />-}</td><td><ol><li>a</li><li>b</li><li>c</li></ol></td></tr>
           <tr><td>{=<br />&#9251;-&#9251;a<br />&#9251;-&#9251;b<br />&#9251;-&#9251;c<br />=}</td><td><ul><li>a</li><li>b</li><li>c</li></ul></td></tr>
-          <tr><td>:명언</td><td><blockquote>명언</blockquote></td></tr>
+          <tr><td>&gt;명언</td><td><blockquote>명언</blockquote></td></tr>
+          <tr><td>:내용</td><td><indent>내용</indent></td></tr>
+          <tr><td>::내용</td><td><indent><indent>내용</indent></indent></td></tr>
+          <tr><td>:::내용</td><td><indent><indent><indent>내용</indent></indent></indent></td></tr>
+          <tr><td>{|<br />|-<br />| a<br />| b<br />|-<br />| c<br />| d<br />|-<br />| e<br />| f<br />|}</td><td><table><tbody><tr><td>a</td><td>b</td></tr></tbody><tbody><tr><td>c</td><td>d</td></tr><tr><td>e</td><td>f</td></tr></tbody></table></td></tr>
+          <tr><td colspan="2"><span style="font-size: .8em;">표를 만드는 자세한 방법은 <a href="https://tablesgenerator.com/mediawiki_tables">tablesgenerator.com</a>을 참고하세요.</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -86,6 +91,20 @@
           <tr><td>리,리브레,리브레위키</td><td>리브레위키</td></tr>
           <tr><td>남,나무,남간,나무위키</td><td>나무위키</td></tr>
           <tr><td>픈,안,FNBase</td><td>FNBase</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h2>기타 문법</h2>
+      <input type="checkbox" id="check-7"/><label for="check-7"><strong>펼치기/접기</strong></label><br /><br />
+      <table>
+        <thead>
+          <tr><th>문법</th><th>설명</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>[includeonly]내용[/includeonly]</td><td>틀 문서에서는 보이지 않고 끼워넣어야 보입니다.</td></tr>
+          <tr><td>[noinclude]내용[/noinclude]</td><td>틀 문서에서는 보이지만 끼워넣어지지 않습니다.</td></tr>
+          <tr><td>----</td><td>가로선을 긋습니다.</td></tr>
         </tbody>
       </table>
     </div>
