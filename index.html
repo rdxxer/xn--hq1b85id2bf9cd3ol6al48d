@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./master.css">
+    <title>OpenFNB 도움말</title>
+  </head>
+  <body>
+    <h1>OpenFNB 문법 도움</h1>
+    <div>
+      <h2>매직 워드</h2>
+      <input type="checkbox" id="check-1"/><label for="check-1"><strong>펼치기/접기</strong></label><br /><br />
+      <table>
+        <thead>
+          <tr><th>문법</th><th>설명</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>___404TEXT___</td><td>문서를 찾을 수 없을 때 나오는 설명을 표시합니다.</td></tr>
+          <tr><td>___PAGERAWNAME___</td><td>문서의 제목을 표시합니다.</td></tr>
+          <tr><td>___PAGENAME___</td><td>문서의 제목을 필터링하여 표시합니다.</td></tr>
+          <tr><td>___PAGECREATED___</td><td>문서가 만들어진 시각을 표시합니다.</td></tr>
+          <tr><td>___PARENT___</td><td>문서의 상위 문서를 표시합니다.</td></tr>
+          <tr><td>___PAGEACL___</td><td>문서의 ACL을 표시합니다.</td></tr>
+          <tr><td>___VERSION___</td><td>사이트에 사용된 엔진의 버전을 표시합니다.</td></tr>
+          <tr><td>___SITENAME___</td><td>사이트의 이름을 표시합니다.</td></tr>
+          <tr><td>___TIMEZONE___</td><td>사이트의 시간대를 표시합니다.</td></tr>
+          <tr><td>___LANGUAGE___</td><td>사이트의 언어를 표시합니다.</td></tr>
+          <tr><td>___BR___</td><td>줄바꿈 문자를 표시합니다.</td></tr>
+          <tr><td>___NOW___</td><td>타임 스탬프를 표시합니다.</td></tr>
+          <tr><td>___DATETIME___</td><td>타임스탬프를 깔끔하게 정리하여 표시합니다.</td></tr>
+          <tr><td>___ADDRESS___</td><td>방문자의 IP 주소를 표시합니다.</td></tr>
+          <tr><td>___YOU___</td><td>방문자의 닉네임 또는 IP 주소를 표시합니다.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h2>서식</h2>
+      <input type="checkbox" id="check-2"/><label for="check-2"><strong>펼치기/접기</strong></label><br /><br />
+      <table class="border">
+        <thead>
+          <tr><th>문법</th><th>결과</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>'''굵게'''</td><td><strong>굵게</strong></td></tr>
+          <tr><td>''이탤릭''</td><td><em>이탤릭</em></td></tr>
+          <tr><td>--취소선--</td><td><strike>취소선</strike></td></tr>
+          <tr><td>~~회색~~</td><td><span class="muted">회색</span></td></tr>
+          <tr><td>^^위첨자^^</td><td><sup>위첨자</sup></td></tr>
+          <tr><td>,,아래첨자,,</td><td><sub>아래첨자<sub></td></tr>
+          <tr><td>__밑줄__</td><td><u>밑줄</u></td></tr>
+          <tr><td>[ruby(&#x97D3;&#x570B;, ruby=한국)]</td><td><ruby><rb>&#x97D3;&#x570B;</rb><rp>(</rp><rt>한국</rt><rp>)</rp></ruby></td></tr>
+          <tr><td>&#9251;*&#9251;목록</td><td><ul><li>목록</li></ul></td></tr>
+          <tr><td>&#9251;**&#9251;목록</td><td><ul><ul><li>목록</li></ul></ul></td></tr>
+          <tr><td>&#9251;***&#9251;목록</td><td><ul><ul><ul><li>목록</li></ul></ul></td></tr>
+          <tr><td>{-<br />&#9251;-&#9251;a<br />&#9251;-&#9251;b<br />&#9251;-&#9251;c<br />-}</td><td><ol><li>a</li><li>b</li><li>c</li></ol></td></tr>
+          <tr><td>{=<br />&#9251;-&#9251;a<br />&#9251;-&#9251;b<br />&#9251;-&#9251;c<br />=}</td><td><ul><li>a</li><li>b</li><li>c</li></ul></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

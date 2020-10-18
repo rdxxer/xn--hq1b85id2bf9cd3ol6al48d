@@ -1,0 +1,15 @@
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]~table {
+  display: none;
+}
+input[type=checkbox]:checked~table {
+  display: block;
+}
+.border td {
+  border: 1px solid black;
+}
+label[for|=check] {
+  color: gray;
+}
